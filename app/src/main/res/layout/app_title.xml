@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/colorBg">
+
+    <TextView
+        android:id="@+id/appTitle_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:drawableLeft="@mipmap/back_normal"
+        android:padding="@dimen/space_17"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/appTitle_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_19" />
+
+    <TextView
+        android:id="@+id/appTitle_rightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="@dimen/space_8"
+        android:ellipsize="marquee"
+        android:maxLines="1"
+        android:textColor="@color/colorTitleRight"
+        android:textSize="@dimen/text_size_15" />
+
+    <TextView
+        android:id="@+id/appTitle_mine_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@mipmap/image_mine_titel"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/space_10"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

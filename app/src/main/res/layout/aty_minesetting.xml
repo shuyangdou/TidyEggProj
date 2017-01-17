@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/paleGray"
+    >
+
+    <include
+        android:id="@+id/head_minesetting"
+        layout="@layout/app_title"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="@color/gray"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_mineset_modifypass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+        <TextView
+            android:layout_margin="@dimen/space_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改密码"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="@dimen/space_10"
+            android:layout_height="@dimen/space_20"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_10"
+            android:background="@mipmap/image_toright"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="@color/gray"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_mineset_aboutus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+        <TextView
+            android:layout_margin="@dimen/space_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关于软件"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="@dimen/space_10"
+            android:layout_height="@dimen/space_20"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_10"
+            android:background="@mipmap/image_toright"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="@color/gray"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_mineset_yijian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+        <TextView
+            android:layout_margin="@dimen/space_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="意见反馈"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="@dimen/space_10"
+            android:layout_height="@dimen/space_20"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_10"
+            android:background="@mipmap/image_toright"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="@color/gray"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_mineset_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+        <TextView
+            android:layout_margin="@dimen/space_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="帮助中心"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="@dimen/space_10"
+            android:layout_height="@dimen/space_20"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_10"
+            android:background="@mipmap/image_toright"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="@color/gray"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_mineset_kefu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+        <TextView
+            android:layout_margin="@dimen/space_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一键客服"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_marginRight="@dimen/space_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_5"
+            android:background="@mipmap/image_group"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="@color/gray"
+        />
+
+    <TextView
+        android:id="@+id/tv_zhuxiao"
+        android:layout_marginTop="@dimen/space_30"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注销登入"
+        android:background="@color/eggcolor"
+        android:gravity="center"
+        android:paddingTop="@dimen/space_8"
+        android:paddingBottom="@dimen/space_8"
+        />
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginBottom="@dimen/space_1"
+    >
+
+    <ImageView
+        android:id="@+id/image_detailgoods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/app_icon"
+        android:layout_margin="@dimen/space_10"
+        />
+
+    <LinearLayout
+        android:layout_margin="@dimen/space_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/tv_detailgoods_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="狼山鸡AAA+级泰笛孕妇蛋"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_17"
+            />
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/space_18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_detailgoods_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_14"
+                android:textColor="@color/gray3"
+                android:text="50元/箱"
+                />
+            <TextView
+                android:id="@+id/tv_detailgoods_num"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_14"
+                android:textColor="@color/gray3"
+                android:text="x50"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

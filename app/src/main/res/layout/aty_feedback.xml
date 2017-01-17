@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/head_feedback"
+        layout="@layout/app_title"
+        />
+
+    <EditText
+        android:id="@+id/ed_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_10"
+        android:lines="5"
+        android:hint="请输入"
+        android:paddingLeft="@dimen/space_10"
+        android:background="@mipmap/image_shuru"
+        />
+
+    <Button
+        android:id="@+id/btn_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提交"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_30"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_16"
+        android:background="@color/eggcolor"
+        android:padding="@dimen/space_10"
+        />
+</LinearLayout>

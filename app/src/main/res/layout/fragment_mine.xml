@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/paleGray"
+    >
+
+    <include
+        android:id="@+id/head_minefrag"
+        layout="@layout/app_title"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_minecenter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@mipmap/image_mine_back"
+        >
+
+        <com.tidy.tidyegg.widget.CircleImageView
+            android:layout_margin="@dimen/space_20"
+            android:id="@+id/image_headpic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/image_logic_pic" />
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/image_headpic"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_10"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/tv_minename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="昵称:萌蛋"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_18"
+                />
+
+            <TextView
+                android:id="@+id/tv_dengji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="等级:二级分销商"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_18"
+                android:layout_marginTop="@dimen/space_10"
+                />
+
+            <TextView
+                android:id="@+id/tv_zhekou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="折扣:九五折"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_18"
+                android:layout_marginTop="@dimen/space_10"
+                />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/space_30"
+            android:layout_height="@dimen/space_30"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/space_10"
+            android:src="@mipmap/image_mine_right" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/tv_minepayment"
+            android:layout_margin="@dimen/space_8"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/gray4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="待付款"
+            android:drawableTop="@mipmap/image_topay"
+            android:drawablePadding="@dimen/space_8"
+            />
+
+        <TextView
+            android:id="@+id/tv_minesendgoods"
+            android:layout_margin="@dimen/space_8"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/gray4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="待发货"
+            android:drawableTop="@mipmap/image_tosend"
+            android:drawablePadding="@dimen/space_8"
+            />
+
+        <TextView
+            android:id="@+id/tv_minereceivegoods"
+            android:layout_margin="@dimen/space_8"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/gray4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="待收货"
+            android:drawableTop="@mipmap/image_toacc"
+            android:drawablePadding="@dimen/space_8"
+            />
+
+        <TextView
+            android:id="@+id/tv_mineevaluation"
+            android:layout_margin="@dimen/space_8"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/gray4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="待评价"
+            android:drawableTop="@mipmap/image_topingjia"
+            android:drawablePadding="@dimen/space_8"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:id="@+id/rl_mineadd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_margin="@dimen/space_10"
+            android:id="@+id/image_myadd"
+            android:layout_width="@dimen/space_30"
+            android:layout_height="@dimen/space_30"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/image_mineadd" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/space_20"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_15"
+            android:textColor="@color/gray4"
+            android:layout_toRightOf="@+id/image_myadd"
+            android:text="我的收货地址" />
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/space_30"
+            android:layout_height="@dimen/space_30"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/space_10"
+            android:src="@mipmap/image_toright" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:id="@+id/rl_minecollection"
+        android:layout_marginTop="@dimen/space_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_margin="@dimen/space_10"
+            android:id="@+id/image_mycollection"
+            android:layout_width="@dimen/space_30"
+            android:layout_height="@dimen/space_30"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/space_10"
+            android:src="@mipmap/image_mineshoucang" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/space_20"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_15"
+            android:textColor="@color/gray4"
+            android:layout_toRightOf="@+id/image_mycollection"
+            android:text="我的收藏" />
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/space_30"
+            android:layout_height="@dimen/space_30"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/space_10"
+            android:src="@mipmap/image_toright" />
+    </RelativeLayout>
+</LinearLayout>

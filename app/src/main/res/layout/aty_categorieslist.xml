@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/paleGray"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_categoriesList"
+        layout="@layout/app_title" />
+
+    <RadioGroup
+        android:id="@+id/rg_categoriesList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingTop="@dimen/space_10">
+
+        <RadioButton
+            android:id="@+id/rb_integrateSort"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:text="综合排序"
+            android:textColor="@color/textcolor_radiobutton"
+            android:textSize="@dimen/text_size_18" />
+
+        <RadioButton
+            android:id="@+id/rb_salesSort"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:text="销量优先"
+            android:textColor="@color/textcolor_radiobutton"
+            android:textSize="@dimen/text_size_18" />
+
+        <com.tidy.tidyegg.widget.RadioButtonDrawableRight
+            android:id="@+id/rb_priceSort"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawablePadding="@dimen/space_2"
+            android:drawableRight="@mipmap/ic_paixu_1"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:text="价格排序"
+            android:textColor="@color/textcolor_radiobutton"
+            android:textSize="@dimen/text_size_18" />
+    </RadioGroup>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_categoriesList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:paddingLeft="@dimen/space_5"
+        android:paddingRight="@dimen/space_5"
+        android:paddingTop="@dimen/space_5" />
+</LinearLayout>

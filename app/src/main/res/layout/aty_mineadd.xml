@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/paleGray"
+    >
+
+    <include
+        android:id="@+id/head_mineadd"
+        layout="@layout/app_title"
+        />
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:layout_below="@+id/head_mineadd"
+        android:layout_above="@+id/ll_mineadd"
+        android:id="@+id/lv_mineadd"
+        android:dividerHeight="@dimen/space_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tv_mineadd_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="暂无数据"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="@dimen/text_size_20"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_mineadd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/eggcolor"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加新地址"
+            android:layout_marginTop="@dimen/space_8"
+            android:layout_marginBottom="@dimen/space_8"
+            android:textSize="@dimen/text_size_16"
+            android:padding="@dimen/space_8"
+            android:layout_gravity="center"
+            android:textColor="@color/gray4"
+            />
+    </LinearLayout>
+</RelativeLayout>

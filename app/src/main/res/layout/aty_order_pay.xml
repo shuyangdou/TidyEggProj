@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tab_shoppingCart_bg"
+    android:descendantFocusability="blocksDescendants">
+
+    <include
+        android:id="@+id/title_orderPay"
+        layout="@layout/app_title" />
+
+    <RelativeLayout
+        android:id="@+id/rl_orderPay_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:background="@color/paleGray" />
+
+        <TextView
+            android:id="@+id/tv_orderPay_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:paddingLeft="@dimen/space_8"
+            android:textColor="@color/colorTitle" />
+
+        <Button
+            android:id="@+id/btn_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="#ee3e54"
+            android:padding="@dimen/space_8"
+            android:text=" 付款 "
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sv_orderPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rl_orderPay_bottom"
+        android:layout_below="@id/title_orderPay"
+        android:fadingEdge="none"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_orderNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@color/white"
+                android:padding="@dimen/space_8"
+                android:text="111111111111111111111"
+                android:textColor="@color/colorTitle" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@color/white"
+                android:padding="@dimen/space_8"
+                android:text="商品名称"
+                android:textColor="@color/colorTitle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:background="@color/paleGray" />
+
+            <com.tidy.tidyegg.widget.ScrollViewWithListView
+                android:id="@+id/lv_orderPay_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:divider="@color/tab_shoppingCart_bg"
+                android:dividerHeight="@dimen/space_8"
+                android:fadingEdge="none"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:overScrollMode="never" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:background="@color/paleGray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/space_8">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="订单金额:"
+                    android:textColor="@color/colorTitle" />
+
+                <TextView
+                    android:id="@+id/tv_orderPay_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="10000.00"
+                    android:textColor="#ee3e54"
+                    android:textSize="@dimen/text_size_17" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@color/white"
+                android:padding="@dimen/space_8"
+                android:text="支付方式"
+                android:textColor="@color/colorTitle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_1"
+                android:background="@color/paleGray" />
+
+            <RadioGroup
+                android:id="@+id/rg_orderPay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/space_10">
+
+                <com.tidy.tidyegg.widget.RadioButtonDrawableLeft
+                    android:id="@+id/rb_pay_weixin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/sel_orderpay_rb"
+                    android:drawablePadding="@dimen/space_8"
+                    android:text="微信支付"
+                    android:textColor="@color/colorTitle" />
+
+                <com.tidy.tidyegg.widget.RadioButtonDrawableLeft
+                    android:id="@+id/rb_pay_ali"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:button="@null"
+                    android:checked="false"
+                    android:drawableLeft="@drawable/sel_orderpay_rb"
+                    android:drawablePadding="@dimen/space_8"
+                    android:text="支付宝支付"
+                    android:textColor="@color/colorTitle" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_10"
+                android:background="@color/tab_shoppingCart_bg" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

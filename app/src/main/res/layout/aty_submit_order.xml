@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tab_shoppingCart_bg">
+
+    <include
+        android:id="@+id/title_submitOrder"
+        layout="@layout/app_title" />
+
+    <RelativeLayout
+        android:id="@+id/rl_submitOrder_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_submitOrder_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:paddingLeft="@dimen/space_8"
+            android:textColor="@color/colorTitle" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="#ee3e54"
+            android:padding="@dimen/space_8"
+            android:text="提交订单"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sv_submitOrder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl_submitOrder_bottom"
+        android:layout_below="@id/title_submitOrder"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_receiverInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/space_10">
+
+                <ImageView
+                    android:id="@+id/iv_rightIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/ic_right" />
+
+
+                <TextView
+                    android:id="@+id/tv_receiverInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/iv_rightIcon"
+                    android:text="收货人       18888888888\n\n仙霞路250号"
+                    android:textColor="@color/colorTitle" />
+            </RelativeLayout>
+
+            <com.tidy.tidyegg.widget.ScrollViewWithListView
+                android:id="@+id/lv_goodsList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@color/white"
+                android:divider="@color/tab_shoppingCart_bg"
+                android:dividerHeight="@dimen/space_8"
+                android:fadingEdge="none"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:overScrollMode="never" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/space_16"
+                android:paddingLeft="@dimen/space_8"
+                android:paddingRight="@dimen/space_8"
+                android:paddingTop="@dimen/space_8">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="* 客户留言"
+                    android:textColor="@color/colorTitle" />
+
+                <EditText
+                    android:id="@+id/et_messageContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:background="@drawable/shape_home_rectangle"
+                    android:gravity="left|top"
+                    android:lines="3"
+                    android:padding="@dimen/space_3"
+                    android:textColor="@color/colorTitle" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_10"
+                android:background="@color/tab_shoppingCart_bg" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

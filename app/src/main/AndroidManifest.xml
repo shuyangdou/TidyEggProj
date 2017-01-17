@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tidy.tidyegg">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+
+    <application
+        android:name=".base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".activity.LoginAty"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 泰笛蛋首页 -->
+        <activity
+            android:name=".activity.MainAty"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <!-- 找回密码 -->
+        <activity
+            android:name=".activity.ForgotPasswordAty"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 设置新密码 -->
+        <activity
+            android:name=".activity.ReinstallAty"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 个人中心 -->
+        <activity
+            android:name=".activity.PerCenterAty"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 我的订单 -->
+        <activity
+            android:name=".activity.MyOrderAty"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 选择城市 -->
+        <activity
+            android:name=".activity.ChooseCityAty"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 商品秒杀 -->
+        <activity
+            android:name=".activity.GoogsSpikeAty"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 我的收货地址 -->
+        <activity
+            android:name=".activity.MineAddAty"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 商品分类某一具体分类的列表 -->
+        <activity
+            android:name=".activity.CategoriesListAty"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 我的收藏 -->
+        <activity
+            android:name=".activity.MineCollectionAty"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 我的订单详情 -->
+        <activity
+            android:name=".activity.OrderListDetailAty"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 我的设置 -->
+        <activity
+            android:name=".activity.MineSettingAty"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 新增收货地址，修改收货地址的界面 -->
+        <activity
+            android:name=".activity.NewAddressAty"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 查看物流 -->
+        <activity
+            android:name=".activity.LogisticsAty"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 我要评价 -->
+        <activity
+            android:name=".activity.EvaluateAty"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 购物车商品结算，提交订单 -->
+        <activity
+            android:name=".activity.SubmitOrderAty"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 修改密码 -->
+        <activity
+            android:name=".activity.ModifyPasswordAty"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 意见反馈 -->
+        <activity
+            android:name=".activity.FeedbackAty"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 订单付款 -->
+        <activity
+            android:name=".activity.OrderPayAty"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 商品详情 -->
+        <activity
+            android:name=".activity.EggDetailAty"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

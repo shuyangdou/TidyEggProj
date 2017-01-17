@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tab_shoppingCart_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_shoppingCat"
+        layout="@layout/app_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_emptyTips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="购物车空空如也\n来挑几箱好蛋吧!"
+            android:textSize="@dimen/text_size_16" />
+
+        <com.baoyz.swipemenulistview.SwipeMenuListView
+            android:id="@+id/swipeMenuListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/line_shoppingCat"
+            android:divider="@color/tab_home_bg"
+            android:dividerHeight="@dimen/space_8"
+            android:fadingEdge="none"
+            android:overScrollMode="never" />
+
+        <View
+            android:id="@+id/line_shoppingCat"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:layout_above="@+id/rl_account"
+            android:background="@color/paleGray" />
+
+        <RelativeLayout
+
+            android:id="@+id/rl_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:paddingLeft="@dimen/space_8"
+                android:textColor="@color/colorTitle" />
+
+            <Button
+                android:id="@+id/btn_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="#ee3e54"
+                android:gravity="center"
+                android:paddingBottom="@dimen/space_15"
+                android:paddingLeft="@dimen/space_30"
+                android:paddingRight="@dimen/space_30"
+                android:paddingTop="@dimen/space_15"
+                android:text="结算"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

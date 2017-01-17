@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="@dimen/space_5">
+
+    <ImageView
+        android:id="@+id/item_iv_shoppingCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/goods_image" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/space_5">
+
+        <TextView
+            android:id="@+id/item_tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="@string/app_name"
+            android:textSize="@dimen/text_size_17" />
+
+        <RelativeLayout
+            android:id="@+id/item_rl_goodsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/item_tv_rmb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/item_tv_unitPrice"
+                android:layout_alignParentLeft="true"
+                android:text="@string/RMB"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/item_tv_unitPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_1"
+                android:layout_toRightOf="@id/item_tv_rmb"
+                android:text="196"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_size_18" />
+
+            <TextView
+                android:id="@+id/item_tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/space_5"
+                android:text="x1" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/item_rl_editLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_shoppingcart_rectangle"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="5">
+
+            <TextView
+                android:id="@+id/item_tv_subtract"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="@dimen/space_5"
+                android:text="-"
+                android:textSize="@dimen/text_size_20" />
+
+            <View
+                android:layout_width="@dimen/space_1"
+                android:layout_height="match_parent"
+                android:background="@color/gray" />
+
+            <TextView
+                android:id="@+id/item_tv_goodsCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="99"
+                android:textSize="@dimen/text_size_20" />
+
+            <View
+                android:layout_width="@dimen/space_1"
+                android:layout_height="match_parent"
+                android:background="@color/gray" />
+
+            <TextView
+                android:id="@+id/item_tv_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="@dimen/space_5"
+                android:text="+"
+                android:textSize="@dimen/text_size_20" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

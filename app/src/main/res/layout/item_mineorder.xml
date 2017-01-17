@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/space_2"
+    android:layout_marginRight="@dimen/space_2"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_orderlist_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/space_8"
+            android:layout_marginRight="@dimen/space_30"
+            android:layout_marginTop="@dimen/space_8"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="@color/gray3" />
+
+    <LinearLayout
+        android:id="@+id/ll_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.tidy.tidyegg.widget.MyListview
+            android:id="@+id/lv_orderlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="@color/gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_10"
+        android:layout_marginLeft="@dimen/space_15"
+        android:layout_marginRight="@dimen/space_15"
+        android:layout_marginTop="@dimen/space_10">
+
+        <TextView
+            android:id="@+id/tv_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实付款:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_orderlist_forpay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="￥123.00"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_orderlist_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_10"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_orderlist_btnleft"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_btn_back"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/space_6"
+            android:textColor="@color/gray3"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_orderlist_btnright"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_weight="1"
+            android:background="@drawable/shape_btn_redback"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/space_6"
+            android:textColor="@color/eggcolor"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="backcolor">#b9b9b9</color>
+    <color name="eggcolor">#ffd600</color>
+
+    <color name="gray1">#ababab</color>
+    <color name="gray2">#878787</color>
+    <color name="gray3">#8d8d8d</color>
+    <color name="gray4">#212121</color>
+</resources>

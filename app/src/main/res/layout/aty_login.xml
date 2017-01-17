@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/eggcolor"
+        >
+            <com.tidy.tidyegg.widget.CircleImageView
+                android:layout_margin="@dimen/space_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/image_denglu_touxiang"
+                />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/space_30"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginRight="@dimen/space_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/iconfont_shouji"
+            />
+
+        <EditText
+            android:id="@+id/ed_account"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入手机号码"
+            android:background="@null"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="@color/eggcolor"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginRight="@dimen/space_20"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/space_30"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginRight="@dimen/space_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/iconfont_mima"
+            />
+
+        <EditText
+            android:id="@+id/ed_password"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请输入密码(6-16个字符)"
+            android:inputType="numberPassword"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="@color/eggcolor"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginRight="@dimen/space_20"
+        />
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/space_30"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginRight="@dimen/space_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/cb_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="记住密码"
+            android:layout_toRightOf="@+id/cb_password"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="忘记密码？"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_30"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginRight="@dimen/space_20"
+        android:layout_marginBottom="@dimen/space_20"
+        android:text="登录"
+        android:textSize="@dimen/text_size_16"
+        android:padding="@dimen/space_10"
+        android:background="@drawable/shape_btn_redback"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="欢迎登入泰笛蛋"
+        android:textColor="@color/gray3"
+        android:textSize="@dimen/text_size_16"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/space_30"
+        />
+</LinearLayout>
