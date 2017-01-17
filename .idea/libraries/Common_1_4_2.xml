@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Common-1.4.2">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/cn.qqtheme.framework/Common/1.4.2/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/cn.qqtheme.framework/Common/1.4.2/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/cn.qqtheme.framework/Common/1.4.2/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.qqtheme.framework/Common/1.4.2/29244d00b87e8e06097a10f608c5dbaea2e5f6c7/Common-1.4.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
