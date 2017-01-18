@@ -88,24 +88,24 @@ public class NewAddressAty extends BaseActivity implements View.OnClickListener 
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.tv_select_address:
-                try {
-                    ArrayList<AddressPicker.Province> data = new ArrayList<AddressPicker.Province>();
-                    String json = ConvertUtils.toString(getAssets().open("city.json"));
-                    data.addAll(JSON.parseArray(json, AddressPicker.Province.class));
-                    AddressPicker picker = new AddressPicker(this, data);
-                    picker.setSelectedItem("上海", "上海", "长宁");
-                    picker.setOnAddressPickListener(new AddressPicker.OnAddressPickListener() {
-                        @Override
-                        public void onAddressPicked(AddressPicker.Province province, AddressPicker.City city, AddressPicker.County county) {
-                            tv_provinces.setText("省份:"+province.getAreaName());
-                            tv_city.setText("城市:"+city.getAreaName());
-                            tv_county.setText("区县:"+county.getAreaName());
-                        }
-                    });
-                    picker.show();
-                } catch (Exception e) {
-                    toast(e.toString());
-                }
+//                try {
+//                    ArrayList<AddressPicker.Province> data = new ArrayList<AddressPicker.Province>();
+//                    String json = ConvertUtils.toString(getAssets().open("city.json"));
+//                    data.addAll(JSON.parseArray(json, AddressPicker.Province.class));
+//                    AddressPicker picker = new AddressPicker(this, data);
+//                    picker.setSelectedItem("上海", "上海", "长宁");
+//                    picker.setOnAddressPickListener(new AddressPicker.OnAddressPickListener() {
+//                        @Override
+//                        public void onAddressPicked(AddressPicker.Province province, AddressPicker.City city, AddressPicker.County county) {
+//                            tv_provinces.setText("省份:"+province.getAreaName());
+//                            tv_city.setText("城市:"+city.getAreaName());
+//                            tv_county.setText("区县:"+county.getAreaName());
+//                        }
+//                    });
+//                    picker.show();
+//                } catch (Exception e) {
+//                    toast(e.toString());
+//                }
                 break;
             default:
                 break;
